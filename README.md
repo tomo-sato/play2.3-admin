@@ -1,9 +1,14 @@
 # play2.3-admin
-play2.3-admin ‚ÍA Play framework 2.3 ƒx[ƒX‚Åì¬‚³‚ê‚½ŠÇ—‰æ–ÊƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒx[ƒX‚Å‚·B
+play2.3-admin ã¯ã€ Play framework 2.3 ãƒ™ãƒ¼ã‚¹ã§ä½œæˆã•ã‚ŒãŸç®¡ç†ç”»é¢ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ãƒ™ãƒ¼ã‚¹ã§ã™ã€‚
 
 
 
-### ƒ‰ƒCƒZƒ“ƒX
+## ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ
+* [play2.3-admin ãƒ¢ãƒƒã‚¯HTML](https://tomo-sato.github.io/play2.3-admin/doc/html/index.html)
+
+
+
+### ãƒ©ã‚¤ã‚»ãƒ³ã‚¹
 Copyright 2016 Tomomichi Sato This software is licensed under the Apache 2 license, quoted below.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at
