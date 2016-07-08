@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>コンテンツリスト - play2.3-admin</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<style type="text/css">
+@media ( min-width: 768px ) {
+	#banner {
+		min-height: 300px;
+		border-bottom: none;
+	}
+	.bs-docs-section {
+		margin-top: 8em;
+	}
+	.bs-component {
+		position: relative;
+	}
+	.bs-component .modal {
+		position: relative;
+		top: auto;
+		right: auto;
+		left: auto;
+		bottom: auto;
+		z-index: 1;
+		display: block;
+	}
+	.bs-component .modal-dialog {
+		width: 90%;
+	}
+	.bs-component .popover {
+		position: relative;
+		display: inline-block;
+		width: 220px;
+		margin: 20px;
+	}
+	.nav-tabs {
+		margin-bottom: 15px;
+	}
+	.progress {
+		margin-bottom: 10px;
+	}
+}
+</style>
+
+<!--[if lt IE 9]>
+	<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<header>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="/" class="navbar-brand">play2.3-admin</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<div class="bs-docs-section">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="page-header">
+					<h1 id="container">コンテンツリスト</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="bs-component">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">共通</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li><a href="./login.html">ログイン（/login.html）</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">サンプル</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li><a href="./list.html">一覧（/list.html）</a></li>
+								<li><a href="./input.html">登録・編集（/input.html）</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+$('.bs-component [data-toggle="popover"]').popover();
+$('.bs-component [data-toggle="tooltip"]').tooltip();
+</script>
+
+</body>
+</html>
