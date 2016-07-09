@@ -3,7 +3,12 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
+GET     /                           jp.dcworks.admin.controllers.LoginController.indexGet()
+
+# Sample page
+GET     /sample/                    jp.dcworks.admin.controllers.SampleController.indexGet()
+GET     /sample/input               jp.dcworks.admin.controllers.SampleController.inputGet()
+POST    /sample/input               jp.dcworks.admin.controllers.SampleController.inputPost()
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /*file                      controllers.Assets.at(path="/public", file)
