@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>コンテンツリスト - play2.3-admin</title>
+<title>登録・編集 - play2.3-admin</title>
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <style type="text/css">
@@ -61,6 +61,11 @@
 			<div class="navbar-header">
 				<a href="/" class="navbar-brand">play2.3-admin</a>
 			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">ログアウト</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </header>
@@ -70,38 +75,38 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="page-header">
-					<h1 id="container">コンテンツリスト</h1>
+					<h1 id="container">登録・編集</h1>
 				</div>
 			</div>
-		</div>
 
-		<div class="row">
 			<div class="col-lg-4">
-				<div class="bs-component">
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<h3 class="panel-title">共通</h3>
-						</div>
-						<div class="panel-body">
-							<ul>
-								<li><a href="./login_index.html">ログイン（/login_index.html）</a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<h3 class="panel-title">サンプル</h3>
-						</div>
-						<div class="panel-body">
-							<ul>
-								<li><a href="./sample_index.html">一覧（/sample_index.html）</a></li>
-								<li><a href="./sample_input.html">登録・編集（/sample_input.html）</a></li>
-							</ul>
-						</div>
-					</div>
-
+				<div class="alert alert-dismissible alert-danger">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<strong>エラー</strong>
+					<ul>
+						<li>年齢が不正です。</li>
+						<li>年齢が不正です。</li>
+						<li>年齢が不正です。</li>
+					</ul>
 				</div>
+
+				<form class="bs-component">
+					<div class="form-group">
+						<label class="control-label" for="focusedInput">名前</label>
+						<input class="form-control" id="focusedInput" type="text" value="This is focused...">
+					</div>
+					<div class="form-group has-error">
+						<label class="control-label" for="inputError">年齢</label>
+						<input type="text" class="form-control" id="inputError">
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="focusedInput">誕生日</label>
+						<input class="form-control" id="focusedInput" type="text" value="This is focused...">
+					</div>
+					<div class="bs-component col-lg-offset-10">
+						<a href="#" class="btn btn-primary">登録</a>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
