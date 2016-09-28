@@ -4,6 +4,8 @@ package jp.dcworks.admin;
 import play.Application;
 import play.GlobalSettings;
 import play.Logger;
+import play.api.mvc.EssentialFilter;
+import play.filters.csrf.CSRFFilter;
 import play.libs.F.Promise;
 import play.mvc.Http.RequestHeader;
 import play.mvc.Result;
@@ -16,6 +18,12 @@ import play.mvc.Results;
  * @author tomo-sato
  */
 public class Global extends GlobalSettings {
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public <T extends EssentialFilter> Class<T>[] filters() {
+		return new Class[]{CSRFFilter.class};
+	}
 
 	/**
 	 * アプリケーション起動イベント。

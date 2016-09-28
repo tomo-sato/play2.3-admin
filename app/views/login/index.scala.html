@@ -1,3 +1,6 @@
+@(loginForm: Form[jp.dcworks.admin.controllers.LoginController.LoginForm])
+@import helper._
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,20 +73,30 @@ body { padding-top: 80px; }
 	<div class="bs-docs-section">
 		<div class="row">
 			<div class="col-lg-6 col-lg-offset-3">
+				@if(loginForm.hasErrors()) {
+				<div class="alert alert-dismissible alert-danger">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<strong>エラー</strong>
+					<ul>
+						<li>ログイン情報が不正です。</li>
+					</ul>
+				</div>
+				}
 				<div class="well bs-component">
-					<form class="form-horizontal">
+					<form class="form-horizontal" action="/login" method="POST">
+						@CSRF.formField
 						<fieldset>
 							<legend>ログイン</legend>
 							<div class="form-group">
 								<label for="inputEmail" class="col-lg-2 control-label">Email</label>
 								<div class="col-lg-10">
-									<input type="text" class="form-control" id="inputEmail" placeholder="Email">
+									<input name="email" type="text" class="form-control" id="inputEmail" placeholder="Email" value="@loginForm("email").value">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="inputPassword" class="col-lg-2 control-label">Password</label>
 								<div class="col-lg-10">
-									<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+									<input name="password" type="password" class="form-control" id="inputPassword" placeholder="Password">
 								</div>
 							</div>
 							<div class="form-group">

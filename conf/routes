@@ -4,6 +4,7 @@
 
 # Home page
 GET     /                           jp.dcworks.admin.controllers.LoginController.indexGet()
+POST    /login                      jp.dcworks.admin.controllers.LoginController.login()
 
 # Sample page
 GET     /sample/                    jp.dcworks.admin.controllers.SampleController.indexGet()
